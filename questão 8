@@ -1,0 +1,23 @@
+import java.util.Scanner;
+public class Main {
+public static void main(String[] args) {
+  Scanner scanner = new Scanner(System.in);
+
+  // Declaração das variáveis
+        int numero, soma = 0, media = 0;
+
+        // Leitura dos números
+        for (int i = 0; i < 5; i++) {
+            System.out.println("Digite um número: ");
+            numero = scanner.nextInt();
+
+            // soma dos números
+            soma = soma + numero;
+
+          //media dos números
+          media = soma / 5;
+        }
+       // Impressão ;
+  System.out.println("A soma dos números é: " + soma + " e a média é: " + media);
+    }
+}
