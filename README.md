@@ -1,2 +1,2 @@
-# EstruturaRepeti-o
+# EstruturaRepeticao
 Disciplina da PSC-Estrutura de Repetição
