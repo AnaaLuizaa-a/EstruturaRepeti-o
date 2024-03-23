@@ -1,0 +1,28 @@
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner entrada = new Scanner(System.in);
+
+        // Declara as variáveis
+        int numero, contadorPares = 0, contadorImpares = 0;
+
+        // Solicita ao usuário que digite 10 números inteiros
+        for (int i = 0; i < 10; i++) {
+            System.out.println("Digite um número inteiro: ");
+            numero = entrada.nextInt();
+
+            // Verifica se o número é par ou ímpar
+            if (numero % 2 == 0) {
+                contadorPares++;
+            } else {
+                contadorImpares++;
+            }
+        }
+
+        // Exibe a quantidade de números pares e ímpares
+        System.out.println("A quantidade de números pares é: " + contadorPares);
+        System.out.println("A quantidade de números ímpares é: " + contadorImpares);
+    }
+}
