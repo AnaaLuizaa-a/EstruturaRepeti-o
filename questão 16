@@ -1,0 +1,29 @@
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+
+
+        int n = 500;
+
+        // Declara as variáveis que serão utilizadas para armazenar os termos da série de Fibonacci
+        int a = 0;
+        int b = 1;
+        int c = 0;
+
+        // Exibe o primeiro e o segundo termo da série de Fibonacci
+        System.out.println("1");
+        System.out.println("1");
+
+        // Gera os demais termos da série de Fibonacci
+        for (int i = 3; i <= n; i++) {
+            c = a + b;
+            a = b;
+            b = c;
+
+            System.out.println(c);
+        }
+    }
+}
