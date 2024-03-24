@@ -1,0 +1,57 @@
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+
+        // Declaração das variáveis
+        int n, i, menor, maior, soma;
+
+        // Entrada de dados
+        System.out.println("Digite o número de valores: ");
+        n = input.nextInt();
+
+        // Alocação de memória para o vetor
+        int[] vetor = new int[n];
+
+        // Entrada dos valores no vetor
+        for (i = 0; i < n; i++) {
+            System.out.println("Digite o valor " + (i + 1) + ": ");
+            vetor[i] = input.nextInt();
+        }
+      //verificação de valores
+      while (vetor[i] < 0 || vetor[i] > 1000) {
+      System.out.println("Valor inválido. Digite novamente: ");
+      vetor[i] = input.nextInt();
+
+
+        // Cálculo do menor valor
+        menor = vetor[0];
+        for (i = 1; i < n; i++) {
+            if (vetor[i] < menor) {
+                menor = vetor[i];
+            }
+        }
+
+        // Cálculo do maior valor
+        maior = vetor[0];
+        for (i = 1; i < n; i++) {
+            if (vetor[i] > maior) {
+                maior = vetor[i];
+            }
+        }
+
+        // Cálculo da soma dos valores
+        soma = 0;
+        for (i = 0; i < n; i++) {
+            soma = soma + vetor[i];
+        }
+
+        // Saída dos resultados
+        System.out.println("O menor valor é " + menor);
+        System.out.println("O maior valor é " + maior);
+        System.out.println("A soma dos valores é " + soma);
+    }
+}
+}
